@@ -8,7 +8,6 @@
 namespace OxidEsales\EshopCommunity\Application\Controller;
 
 use OxidEsales\Eshop\Core\Registry;
-use oxRegistry;
 
 /**
  * Current user newsletter manager.
@@ -24,13 +23,6 @@ class AccountNewsletterController extends \OxidEsales\Eshop\Application\Controll
      * @var string
      */
     protected $_sThisTemplate = 'page/account/newsletter.tpl';
-
-    /**
-     * Whether the newsletter option had been changed.
-     *
-     * @var bool
-     */
-    protected $_blNewsletter = null;
 
     /**
      * Whether the newsletter option had been changed give some affirmation.
