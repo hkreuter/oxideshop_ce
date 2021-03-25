@@ -12,6 +12,34 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 - Support PHP 7.1 and 7.2
 
+### Deprecated
+- Management of Newsletter emails:
+    - `OxidEsales\EshopCommunity\Application\Controller\Admin\NewsletterList`
+    - `OxidEsales\EshopCommunity\Application\Controller\Admin\NewsletterMain::save()`
+    - `OxidEsales\EshopCommunity\Application\Controller\Admin\NewsletterPlain`
+    - `OxidEsales\EshopCommunity\Application\Controller\Admin\NewsletterPreview`
+    - `OxidEsales\EshopCommunity\Application\Controller\Admin\NewsletterSelection`
+    - `OxidEsales\EshopCommunity\Application\Controller\Admin\NewsletterSelectionAjax`
+    - `OxidEsales\EshopCommunity\Application\Controller\Admin\NewsletterSend`
+    - `OxidEsales\EshopCommunity\Application\Controller\AccountNewsletterController::_blNewsletter`
+    - `OxidEsales\EshopCommunity\Application\Model\Newsletter`
+    - `OxidEsales\EshopCommunity\Core\Email::sendNewsletterMail()`
+    - `OxidEsales\EshopCommunity\Application\Controller\Admin\NewsletterMain`
+    - Language constants
+        - `NEWSLETTER_DONE_NEWSSEND`
+        - `NEWSLETTER_DONE_GOTONEWSLETTE`
+        - `NEWSLETTER_DONE_TITLE`
+        - `NEWSLETTER_SUBJECT`
+        - `NEWSLETTER_MAIN_MODEL`
+        - `NEWSLETTER_PLAIN_TEXT`
+        - `NEWSLETTER_PREVIEW_PLAINTEXT`
+        - `NEWSLETTER_PREVIEW_HTML`
+        - `NEWSLETTER_SELECTION_SELMAILRESAVER`
+        - `tbclnewsletter_plain`
+        - `tbclnewsletter_preview`
+        - `tbclnewsletter_selection`
+        - `tbclnewsletter_main`
+
 ## [6.7.0] - 2021-03-25
 
 ### Deprecated
@@ -28,30 +56,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Console commands for module configuration management:
     - `oe:module:install-configuration`
     - `oe:module:uninstall-configuration`
-- Management of Newsletter emails:
-    - `OxidEsales\EshopCommunity\Application\Controller\Admin\NewsletterList`
-    - `OxidEsales\EshopCommunity\Application\Controller\Admin\NewsletterMain::save()`
-    - `OxidEsales\EshopCommunity\Application\Controller\Admin\NewsletterPlain`
-    - `OxidEsales\EshopCommunity\Application\Controller\Admin\NewsletterPreview`
-    - `OxidEsales\EshopCommunity\Application\Controller\Admin\NewsletterSelection`
-    - `OxidEsales\EshopCommunity\Application\Controller\Admin\NewsletterSelectionAjax`
-    - `OxidEsales\EshopCommunity\Application\Controller\Admin\NewsletterSend`
-    - `OxidEsales\EshopCommunity\Application\Controller\AccountNewsletterController::_blNewsletter`
-    - `OxidEsales\EshopCommunity\Application\Model\Newsletter`
-    - `OxidEsales\EshopCommunity\Core\Email::sendNewsletterMail()`
-    - Language constants
-        - `NEWSLETTER_DONE_NEWSSEND`
-        - `NEWSLETTER_DONE_GOTONEWSLETTE`
-        - `NEWSLETTER_DONE_TITLE`
-        - `NEWSLETTER_SUBJECT`
-        - `NEWSLETTER_MAIN_MODEL`
-        - `NEWSLETTER_PLAIN_TEXT`
-        - `NEWSLETTER_PREVIEW_PLAINTEXT`
-        - `NEWSLETTER_PREVIEW_HTML`
-        - `NEWSLETTER_SELECTION_SELMAILRESAVER`
-        - `tbclnewsletter_plain`
-        - `tbclnewsletter_preview`
-        - `tbclnewsletter_selection`
 
 
 ### Fixed
